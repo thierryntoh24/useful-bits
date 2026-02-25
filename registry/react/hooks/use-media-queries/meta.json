@@ -1,0 +1,8 @@
+{
+  "name": "use-meadia-queries",
+  "type": "react-hook",
+  "files": ["index.tsx"],
+  "dependencies": ["react"],
+  "target": "hooks",
+  "description": "Custom hook to get device/media state. Returns various screen states such as mobile/tablet/desktop and orientation."
+}

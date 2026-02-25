@@ -1,0 +1,440 @@
+{
+  "General": {
+    "sitename": "Tasks",
+    "sitename-alt": "Tasks",
+    "desc": "Simplifying work, one gig at a time.",
+    "close": "Close",
+    "done": "Done",
+    "cancel": "Cancel",
+    "clear": "Clear",
+    "clear-all": "Clear all",
+    "remove": "Remove",
+    "save": "Save",
+    "back": "Back",
+    "next": "Next",
+    "post": "Post",
+    "more": "More",
+    "submit": "Submit",
+    "delete": "Delete",
+    "delete-all": "Delete all",
+    "dismiss": "Dismiss",
+    "try-again": "Try again",
+    "retry": "Retry",
+    "undo": "Undo",
+    "view-post": "Go to post",
+    "report": "Report",
+    "copying": "Copying...",
+    "copied": "Copied!",
+    "sharing": "Sharing...",
+    "unblock": "Unblock",
+    "block": "Block",
+    "sumtinwong": "Something went wrong, but don't fret — let's give it another shot.",
+    "profile-alt": "Profile image",
+    "drafts": "Drafts",
+    "settings": "Settings",
+    "sign-in": "Sign in",
+    "signing-out": "Signing out...",
+    "sign-out": "Sign out",
+    "search": "Search",
+    "search-done": "Done searching",
+    "search-close": "Close search",
+    "hour": "Hour",
+    "day": "Day",
+    "and": "and",
+    "phone-sms": "Phone or SMS",
+    "username": "username",
+    "appearance": "Appearance",
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System",
+    "load-more": "Load more posts",
+    "limit": "You have reached the end, nothing more to see. :)",
+    "of": "of"
+  },
+  "HomePage": {
+    "title": "Welcome to Tasks",
+    "desc": "Simplifying work, one gig at a time.",
+    "body": "Whether you're looking to get things done or earn by helping out — discover gigs, tasks, and services right around you.",
+    "button-text": "Select your location to get started."
+  },
+  "SelectLocation": {
+    "title": "Welcome to Tasks",
+    "desc": "Simplifying work, one gig at a time.",
+    "body": "Whether you're looking to get things done or earn by helping out — discover gigs, tasks, and services right around you.",
+    "button-text": "Select your location to get started."
+  },
+  "Location": {
+    "Layout": {
+      "title": "Tasks in {location}",
+      "desc": "Find or post quick tasks in {location}. Get help or earn doing everyday jobs near you."
+    },
+    "Page": {
+      "empty": "Looks like there haven't been any tasks in {location} recently.<br></br>Got a task, a request, or something to offer, share it with the community!",
+      "empty-btn": "Post a task now",
+      "load-new": "Load new posts"
+    },
+    "LocationSelector": {
+      "placeholder": "Search location...",
+      "title": "Results for {query}",
+      "title1": "All locations",
+      "no-results": "No results for {query}"
+    }
+  },
+  "Post": {
+    "title": "Post",
+    "Page": {
+      "desc": "Find or post quick tasks in {location}. Get help or earn doing everyday jobs near you."
+    },
+    "Content": {
+      "date-posted": "Posted on"
+    },
+    "PostOptions": {
+      "not-interested": "Not interested",
+      "mute": "Hide all posts",
+      "muting": "Hiding...",
+      "restoring": "Restoring...",
+      "restore": "Restore",
+      "edit-restore": "Edit and restore",
+      "delete": "Delete forever",
+      "edit": "Edit",
+      "extending": "Extending...",
+      "extend": "Extend deadline",
+      "marking": "Marking...",
+      "mark": "Mark as completed",
+      "archiving": "Archiving...",
+      "archive": "Archive post"
+    },
+    "PostActions": {
+      "saved": "Saved",
+      "view-saved": "See saved",
+      "contact-message": "Hi! I came across your post on {name}. Could you please share more details?\n({url})",
+      "reply": "Reply",
+      "reply-title": "Reply via",
+      "phone-sms": "Phone or SMS",
+      "share": "Share",
+      "sharing": "Sharing...",
+      "share-title": "Share",
+      "share-via": "Share via",
+      "share-with-title": "Check this out on {name}",
+      "share-with-text": "Check this out on {name}. Thought you might find it useful: {url}",
+      "copy": "Copy link"
+    },
+    "PostItem": {
+      "hidden-title": "This post has been hidden",
+      "undo-hide": "Undo",
+      "muted-title": "Posts from this user are hidden. You can manage who you hide in your settings.",
+      "undo-mute": "Undo"
+    },
+    "Snapshot": {
+      "title": "Recent from {location}",
+      "empty": "Looks like there haven't been any tasks in {location} recently."
+    },
+    "PostDetails": {
+      "title": "Post highlights",
+      "unavailable": "This post is unavailable",
+      "categories": "Categories",
+      "location": "Location",
+      "compensation": "Compensation",
+      "contact": "Contact method(s)"
+    }
+  },
+  "Profile": {
+    "Actions": {
+      "muting": "Muting...",
+      "mute": "Mute @{username}",
+      "share-with-title": "Check out {username} on {sitename}",
+      "share-with-text": "Check out {username} on {sitename}: {profileURL}",
+      "copy": "Copy account link",
+      "share": "Sharing account via"
+    },
+    "Content": {
+      "on": "on",
+      "all": "Posts",
+      "completed": "Completed",
+      "archived": "Archive",
+      "notice": "We're working hard to bring this feature to life!<br></br>It's not ready just yet, but it’ll be worth the wait, stay tuned. 💫"
+    },
+    "Card": {
+      "edit": "Edit profile",
+      "joined": "Joined {date}"
+    }
+  },
+  "Saves": {
+    "title": "Saves - {name}",
+    "desc": "Tasks you've saved",
+    "sign-in": "Sign in or create an account to access your saves.",
+    "empty": "You haven't saved any posts yet.<br></br>Browse and tap the bookmark icon on posts to save them here for later.",
+    "empty-btn": "Start browsing",
+    "header-title": "Saves"
+  },
+  "Auth": {
+    "Error": {
+      "title": "Sorry, we're unable to log you in at this moment. You could try the following:",
+      "msg": "<li><bold>Check your credentials</bold> – Make sure your email and password are correct.</li><li><bold>Use the correct sign-in method</bold> – If you signed up with Google or another provider, use the same one to sign in.</li><li><bold>Try again later</bold> – Sometimes temporary issues can cause sign-in errors.</li><li><bold>Check your internet connection</bold> – Make sure you're online.</li><li><bold>Contact support</bold> – If the issue persists, <support>reach out to us</support> and we’ll help!</li>",
+      "return": "Go home"
+    }
+  },
+  "Error": {},
+  "Unavailable": {
+    "title": "We're not quite there yet.",
+    "sub": "We're still working on expanding to your location.<br></br>Stay tuned — we're growing fast and hope to support your area soon!"
+  },
+  "Unsupported": {
+    "title": "Currently unavailable in your area",
+    "sub": "We're focused on a limited set of regions at the moment and don't currently have plans to expand beyond them.<br></br>We really appreciate your interest and hope to cross paths in the future.",
+    "note": "If you're using a VPN, try turning it off. We rely on your IP address to determine availability."
+  },
+  "LeftSidebar": {
+    "home": "Home",
+    "saves": "Saved posts",
+    "add": "Add post",
+    "sign-in": "Sign in",
+    "AccountSidebar": {
+      "profile": "Profile",
+      "report": "Report a problem"
+    }
+  },
+  "RightSidebar": {
+    "sign-in": "Add a new post",
+    "log-in": "Log in or join"
+  },
+  "ToastMessages": {
+    "not-interested": "This post has been removed from your feed.",
+    "mute-delete": "Posts from @{username} are visible again.",
+    "mute-add": "Posts from @{username} are hidden. You will no longer see their posts in your feed.",
+    "archive-delete": "Post has been removed from archives.",
+    "archive-add": "Post has been archived.",
+    "complete-add": "Post no longer marked as completed.",
+    "complete-delete": "Post has been marked as completed.",
+    "restore-restored": "Your post has been restored",
+    "restore-expired": "Post has been extended for another 7 days",
+    "unsaved": "Post removed from Saves",
+    "saved": "Post added to Saves",
+    "contact-open-failed": "Couldn't open {method}",
+    "contact-use-failed": "Failed to use {method}",
+    "link-copied": "Link copied to clipboard",
+    "copy-failed": "Failed to copy link",
+    "copy-link-instead": "Failed to share, Copy link instead",
+    "copy-link": "Copy link",
+    "no-native": "Native sharing not supported. Link copied to clipboard instead.",
+    "file-max": "Maximum of {max} files allowed.",
+    "file-invalid": "Invalid file. Allowed formats",
+    "file-large": "File is larger than 2MB.",
+    "file-max1": "Only {max} files allowed. Remove some files to upload new ones.",
+    "unblock": "@{username} has been unblocked.",
+    "block": "@{username} has been blocked.",
+    "load-profile-fail": "Unable to load user profile for {email}",
+    "saves-cleared": "Your saves have been cleared",
+    "saves-restored": "Your saves have been restored"
+  },
+  "Dropdown": {},
+  "NotFound": {
+    "title": "Sorry, this page isn't available",
+    "desc": " The link you followed may be broken,<br></br>or the page may have been removed",
+    "return": "Go back"
+  },
+  "Attachments": {
+    "File": {
+      "vid-tag": "Your browser does not support the video tag."
+    },
+    "Alt": {
+      "title": "Edit image desc (ALT)",
+      "aria-label": "Add a caption for screen readers",
+      "placeholder": "Add a caption"
+    },
+    "AltModal": {
+      "title": "Image description (ALT)"
+    },
+    "esc-to-ex": "ESC to exit"
+  },
+  "ComposeModal": {
+    "Compose": {
+      "title": "New post",
+      "placeholder": "What are you looking to get done?",
+      "default-placeholder": "Start typing.."
+    },
+    "Details": {
+      "title": "Add details",
+      "comp": {
+        "fixed": "Fixed",
+        "hourly": "Hourly",
+        "daily": "Daily",
+        "fixed-placeholder": "Total compensation (min XAF {amount})",
+        "hourly-placeholder": "Hourly rate (min XAF {amount}/hour)",
+        "daily-placeholder": "Daily rate (min XAF {amount}/day)",
+        "label": "Compensation",
+        "desc": "Let others know what you're offering for this task. Choose a type and an amount.",
+        "placeholder": "Leave a note about payment terms (optional)",
+        "title": "Additional Details (optional)"
+      },
+      "contact": {
+        "whatsapp": "Your WhatsApp number",
+        "email": "Your email address",
+        "phone": "Your phone number for calls or SMS",
+        "label": "How people can reach you *",
+        "desc": "Select the ways you'd like to be contacted. You can add multiple methods like WhatsApp, phone, or email.",
+        "add-contact": "Add contact",
+        "section-title": "Contact methods",
+        "notice": "⚠️ Heads up! You're adding contact info to your post — like your phone, whatsapp or email. Just remember, this will be visible to anyone. Only share what you're okay putting out there! (We are working on a more secure way to connect, coming soon.)"
+      },
+      "hood": {
+        "label": "Neighborhood (optional)",
+        "desc": "Specify the exact area or town for more precise visibility. Helpful for local tasks. Your post will also appear under {sub}{parent} as well by default.",
+        "placeholder": "Search neighborhoods in {location}",
+        "default-placeholder": "Search neighbourhoods...",
+        "fetch-failed": "Failed to fetch neighborhoods",
+        "title-alt": "Neigbourhoods in {parent}"
+      },
+      "categ": {
+        "label": "Categories",
+        "desc": "Choose the main type of task you're posting. This helps others find it quickly.",
+        "sub-label": "Subcategories (optional)",
+        "sub-desc": "Add more detail by selecting one or more subcategories related to your task."
+      }
+    },
+    "Drafts": {
+      "empty": "You haven't saved any drafts yet.",
+      "delete": "Delete draft"
+    },
+    "SaveToDrafts": {
+      "title": "Save to drafts?",
+      "sub": "Save to drafts to edit and post at a later time.",
+      "save": "Save to drafts",
+      "discard": "Discard changes"
+    }
+  },
+  "BlockModal": {
+    "title": " Block @{username}",
+    "sub": "Blocking @{username} will remove them from your feed and prevent them from interacting with you. They won’t be able to view your profile or posts.",
+    "continue": "Still wanna continue?",
+    "u-title": "Unblock @{username}",
+    "u-sub": "Unblocking @{username} will allow them to view your posts and profile again, and you’ll start seeing their content if not hiddden. Continue?"
+  },
+  "ComingSoonModal": {
+    "title": "Coming soon...",
+    "sub": "Oops! You’ve just stumbled upon something shiny and new...",
+    "msg": "<span>We're working hard to bring this feature to life! It's not ready just yet, but it’ll be worth the wait, stay tuned. 💫</span><span>Have ideas or feedback? We’d love to hear from you!</span>",
+    "feedback": "Leave feedback",
+    "close": " Got it"
+  },
+  "DeletePostModal": {
+    "title": "Delete post",
+    "sub": "This post will be deleted forever. You won't be able to restore it.<br></br>To keep it restorable, you could archive it instead."
+  },
+  "ClearSavesModal": {
+    "title": "Clear your saves",
+    "sub": "All your saved items will be cleared. You won't be able to restore them if you perform this action"
+  },
+  "FeedbackModal": {
+    "feature": "🚀 Feature Request",
+    "bug": "🐛 Bug or Issue",
+    "improvement": "💡 Improvement Suggestion",
+    "general": "🧭 General Feedback",
+    "design": "🎨 Design / Usability",
+    "mobile": "📱 Mobile Experience",
+    "confusing": "🧼 Something Felt Confusing",
+    "question": "❓ I Have a Question",
+    "title": "Let us know what you think!",
+    "section-title": "Select a topic (optional)",
+    "section-title1": "Message",
+    "placeholder": "How can we improve?",
+    "placeholder1": "Email address",
+    "input-title": "You can leave your email so we can follow up (optional)."
+  },
+  "SettingsModal": {
+    "Profile": {
+      "error-length": "Username must be at least 4 characters",
+      "error-validating": "Error validating username",
+      "title": "Profile",
+      "pic-btn": "Change profile picture",
+      "pic-title": "Profile picture",
+      "pic-label": "Upload picture",
+      "pic-note": "<span>Recommended: 400x400px</span><span>Max size: 2MB</span>",
+      "pic-revert": " Revert change",
+      "pic-reset": " Reset default picture",
+      "display-name": "Display name",
+      "display-placeholder": "How your name appears on your profile",
+      "bio": "A short bio (optional)",
+      "bio-placeholder": "This is the very first thing peers read about you after your name",
+      "gender": "Gender (optional)",
+      "male": "male",
+      "female": "female"
+    },
+    "Account": {
+      "title": "Account",
+      "display-prefs-title": "Display preferences",
+      "language": "Language",
+      "lang-drop-title": " Display language",
+      "auto": "Auto-detect"
+    }
+  },
+  "SignInModal": {
+    "Providers": {
+      "title": "Sign in to continue",
+      "sub": " By continuing you agree to our <span>terms of service</span> and <span>privacy policy</span>",
+      "continue-with": "Continue with",
+      "google-fail": "Google sign-in failed"
+    },
+    "Email": {
+      "title": "Continue with email",
+      "sub": "Enter your email and we'll send you a link to login to your account.",
+      "label": "New email address"
+    },
+    "MagicLink": {
+      "title": "Check your inbox",
+      "sub": "We’ve sent a sign-in link to <email>{address}.</email> Open the link in this browser to complete your sign-in. If you don’t see the email:",
+      "steps": "<li>Check your spam or junk folder.</li><li>Ensure you entered the correct email address.</li>",
+      "note": "The sign-in link will expire in 10 minutes, so please use it soon!"
+    },
+    "BasicProfile": {
+      "error-length": "Username must be at least 4 characters",
+      "error-validating": "Error validating username",
+      "error-displyname": "Display name is required",
+      "invalid-or-taken": "Username is not valid or already taken",
+      "enter-username": "Please enter a valid username",
+      "create-fail": "Failed to create profile",
+      "title": "Welcome to Tasks",
+      "desc": "We just need a few details to finish creating your account. You can always change this later.",
+      "display-name": "Your display name",
+      "display-placeholder": "How your name appears on your profile",
+      "change-email": " Use a different email"
+    }
+  },
+  "Providers": {
+    "AuthProvider": {
+      "load-fail": "Unable to load profile",
+      "load-fail-var": "Unable to load profile for {email}"
+    }
+  },
+  "ServerSide": {
+    "generic-error-msg": "Oops! Something went wrong. Please try again later.",
+    "generic-network-error": "Please check your network and try again.",
+    "empty-username": "Username cannot be empty",
+    "short-username": "Username too short",
+    "taken-username": "Username already taken",
+    "available-username": "Username is available",
+    "profile-create-success": "Profile created successfully",
+    "no-user-id": "No user ID or username provided",
+    "profile-loaded": "Profile loaded successfully",
+    "draft-saved": "Your draft has been saved.",
+    "attach-delete-error": "An attachment couldn’t be deleted. Please try again.",
+    "draft-deleted": "Draft has been deleted.",
+    "drafts-cleared": "Drafts have been cleared.",
+    "post-published": "Your post has been published.",
+    "post-unsaved": "Post removed from Saved",
+    "post-saved": "Post added to Saved",
+    "restore-restored": "Your post has been restored",
+    "restore-expired": "Post has been extended for another 7 days",
+    "post-deleted": "Post has been deleted.",
+    "feedback-no-msg": "No message",
+    "feedback-thanks": "Thanks for your feedback — we really appreciate it! 💛",
+    "magic-link-fail": "Failed to send sign in link. Please try again in later.",
+    "invalid-email": "Email address \"{email}\" is invalid.",
+    "magic-link-sent": "Email submitted successfully. Sign in link sent",
+    "no-email": "Please provide a valid email",
+    "sign-out-success": "User successfully signed out",
+    "attachment-upload-fail": "An attachment couldn’t be uploaded. Please try again.",
+    "email-share-subject": "Following Up on Your Post on {name}",
+    "link-meta-fetch-fail": "Failed to fetch metadata"
+  }
+}

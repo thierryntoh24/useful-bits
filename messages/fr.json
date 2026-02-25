@@ -1,0 +1,440 @@
+{
+  "General": {
+    "sitename": "Tasks",
+    "sitename-alt": "Tâches",
+    "desc": "Simplifier le travail, une mission à la fois.",
+    "close": "Fermer",
+    "done": "Terminée",
+    "cancel": "Annuler",
+    "clear": "Effacer",
+    "clear-all": "Tout effacer",
+    "remove": "Supprimer",
+    "save": "Enregistrer",
+    "back": "Retour",
+    "next": "Suivant",
+    "post": "Publier",
+    "more": "Plus",
+    "submit": "Soumettre",
+    "delete": "Supprimer",
+    "delete-all": "Tout supprimer",
+    "dismiss": "Ignorer",
+    "try-again": "Réessayer",
+    "retry": "Réessayer",
+    "undo": "Annuler",
+    "view-post": "Voir la publication",
+    "report": "Signaler",
+    "copying": "Copie en cours...",
+    "copied": "Copié !",
+    "sharing": "Partage en cours...",
+    "unblock": "Débloquer",
+    "block": "Bloquer",
+    "sumtinwong": "Un problème est survenu, mais ne vous inquiétez pas — essayons encore une fois.",
+    "profile-alt": "Image de profil",
+    "drafts": "Brouillons",
+    "settings": "Paramètres",
+    "sign-in": "Se connecter",
+    "signing-out": "Déconnexion en cours...",
+    "sign-out": "Se déconnecter",
+    "search": "Rechercher",
+    "search-done": "Recherche terminée",
+    "search-close": "Fermer la recherche",
+    "hour": "Heure",
+    "day": "Jour",
+    "and": "et",
+    "phone-sms": "Téléphone ou SMS",
+    "username": "nom d'utilisateur",
+    "appearance": "Thème",
+    "dark": "Sombre",
+    "light": "Clair",
+    "system": "Système",
+    "load-more": "Charger plus de publications",
+    "limit": "Vous êtes arrivé au bout, rien de plus à voir. :)",
+    "of": "de"
+  },
+  "HomePage": {
+    "title": "Bienvenue sur Tasks",
+    "desc": "Simplifier le travail, une mission à la fois.",
+    "body": "Que vous cherchiez à accomplir des tâches ou à gagner de l'argent en aidant — découvrez des missions, travaux et services près de chez vous.",
+    "button-text": "Sélectionnez votre localisation pour commencer."
+  },
+  "SelectLocation": {
+    "title": "Bienvenue sur Tasks",
+    "desc": "Simplifier le travail, une mission à la fois.",
+    "body": "Que vous cherchiez à accomplir des tâches ou à gagner de l'argent en aidant — découvrez des missions, travaux et services près de chez vous.",
+    "button-text": "Sélectionnez votre localisation pour commencer."
+  },
+  "Location": {
+    "Layout": {
+      "title": "Tâches à {location}",
+      "desc": "Trouvez ou publiez des petites tâches à {location}. Obtenez de l'aide ou gagnez de l'argent en effectuant des travaux du quotidien près de chez vous."
+    },
+    "Page": {
+      "empty": "Il semble qu'il n'y ait eu aucune tâche à {location} récemment.<br></br>Vous avez une tâche, une demande ou un service à proposer ? Partagez-le avec la communauté !",
+      "empty-btn": "Publier une tâche",
+      "load-new": "Charger les nouvelles publications"
+    },
+    "LocationSelector": {
+      "placeholder": "Rechercher une localisation...",
+      "title": "Résultats pour {query}",
+      "title1": "Toutes les localisations",
+      "no-results": "Aucun résultat pour {query}"
+    }
+  },
+  "Post": {
+    "title": "Publication",
+    "Page": {
+      "desc": "Trouvez ou publiez des tâches rapides à {location}. Obtenez de l'aide ou gagnez de l'argent en effectuant des petits travaux près de chez vous."
+    },
+    "Content": {
+      "date-posted": "Publié le"
+    },
+    "PostOptions": {
+      "not-interested": "Pas intéressé(e)",
+      "mute": "Masquer tous les posts",
+      "muting": "Masquage...",
+      "restoring": "Restauration...",
+      "restore": "Restaurer",
+      "edit-restore": "Modifier et restaurer",
+      "delete": "Supprimer définitivement",
+      "edit": "Modifier",
+      "extending": "Prolongation...",
+      "extend": "Prolonger la date limite",
+      "marking": "Marquage...",
+      "mark": "Marquer comme terminé",
+      "archiving": "Archivage...",
+      "archive": "Archiver le post"
+    },
+    "PostActions": {
+      "saved": "Enregistré",
+      "view-saved": "Voir enregistré",
+      "contact-message": "Bonjour ! J'ai vu votre annonce sur {name}. Pourriez-vous m'en dire plus ?\n({url})",
+      "reply": "Répondre",
+      "reply-title": "Répondre via",
+      "phone-sms": "Téléphone ou SMS",
+      "share": "Partager",
+      "sharing": "Partage...",
+      "share-title": "Partager",
+      "share-via": "Partager via",
+      "share-with-title": "Découvrez ceci sur {name}",
+      "share-with-text": "Découvrez ceci sur {name}. Je pense que cela pourrait vous intéresser : {url}",
+      "copy": "Copier le lien"
+    },
+    "PostItem": {
+      "hidden-title": "Ce post a été masqué",
+      "undo-hide": "Annuler",
+      "muted-title": "Les posts de cet utilisateur sont masqués. Vous pouvez gérer vos préférences dans vos paramètres.",
+      "undo-mute": "Annuler"
+    },
+    "Snapshot": {
+      "title": "Récent à {location}",
+      "empty": "Il semble qu'il n'y ait eu aucune tâche à {location} récemment."
+    },
+    "PostDetails": {
+      "title": "Aperçu du post",
+      "unavailable": "Ce post n'est pas disponible",
+      "categories": "Catégories",
+      "location": "Lieu",
+      "compensation": "Rémunération",
+      "contact": "Méthode(s) de contact"
+    }
+  },
+  "Profile": {
+    "Actions": {
+      "muting": "Masquage...",
+      "mute": "Masquer @{username}",
+      "share-with-title": "Découvrez {username} sur {sitename}",
+      "share-with-text": "Découvrez {username} sur {sitename} : {profileURL}",
+      "copy": "Copier le lien du compte",
+      "share": "Partager le compte via"
+    },
+    "Content": {
+      "on": "on",
+      "all": "Publications",
+      "completed": "Terminés",
+      "archived": "Archives",
+      "notice": "Nous travaillons dur pour donner vie à cette fonctionnalité !<br></br>Elle n'est pas encore prête, mais l'attente en vaudra la peine. Restez connectés. 💫"
+    },
+    "Card": {
+      "edit": "Modifier le profil",
+      "joined": "Inscrit le {date}"
+    }
+  },
+  "Saves": {
+    "title": "Enregistrements - {name}",
+    "desc": "Tâches enregistrées",
+    "sign-in": "Connectez-vous ou créez un compte pour accéder à vos enregistrements.",
+    "empty": "Vous n'avez enregistré aucun article pour le moment.<br></br>Parcourez les articles et appuyez sur l'icône de favoris pour les enregistrer ici et les consulter ultérieurement.",
+    "empty-btn": "Commencer la navigation",
+    "header-title": "Enregistrements"
+  },
+  "Auth": {
+    "Error": {
+      "title": "Désolé, nous ne pouvons pas vous connecter pour le moment. Vous pouvez essayer ce qui suit :",
+      "msg": "<li><bold>Vérifiez vos identifiants</bold> – Assurez-vous que votre adresse e-mail et votre mot de passe sont corrects.</li><li><bold>Utilisez la bonne méthode de connexion</bold> – Si vous vous êtes inscrit avec Google ou un autre fournisseur, utilisez le même pour vous connecter.</li><li><bold>Réessayez ultérieurement</bold> – Des problèmes temporaires peuvent parfois entraîner des erreurs de connexion.</li><li><bold>Vérifiez votre connexion Internet</bold> – Assurez-vous d'être en ligne.</li><li><bold>Contacter l'assistance</bold> – Si le problème persiste, <support>contactez-nous</support> et nous vous aiderons !</li>",
+      "return": "Accueil"
+    }
+  },
+  "Error": {},
+  "Unavailable": {
+    "title": "Nous n'y sommes pas encore.",
+    "sub": "Nous travaillons encore à nous développer dans votre région.<br></br>Restez à l'écoute — nous grandissons rapidement et espérons bientôt être disponibles dans votre secteur !"
+  },
+  "Unsupported": {
+    "title": "Actuellement indisponible dans votre région",
+    "sub": "Nous nous concentrons actuellement sur un nombre limité de régions et n'avons pas de projets d'expansion au-delà pour le moment.<br></br>Nous apprécions vraiment votre intérêt et espérons vous retrouver à l'avenir.",
+    "note": "Si vous utilisez un VPN, essayez de le désactiver. Nous utilisons votre adresse IP pour déterminer la disponibilité."
+  },
+  "LeftSidebar": {
+    "home": "Accueil",
+    "saves": "Enregistrements",
+    "add": "Ajouter une publication",
+    "sign-in": "Se connecter",
+    "AccountSidebar": {
+      "profile": "Profil",
+      "report": "Signaler un problème"
+    }
+  },
+  "RightSidebar": {
+    "sign-in": "Ajouter une publication",
+    "log-in": "Se connecter à"
+  },
+  "ToastMessages": {
+    "not-interested": "Cette publication a été retirée de votre fil.",
+    "mute-delete": "Les publications de @{username} sont à nouveau visibles.",
+    "mute-add": "Les publications de @{username} sont masquées. Vous ne verrez plus ses publications dans votre fil.",
+    "archive-delete": "La publication a été retirée des archives.",
+    "archive-add": "La publication a été archivée.",
+    "complete-add": "La publication n’est plus marquée comme terminée.",
+    "complete-delete": "La publication a été marquée comme terminée.",
+    "restore-restored": "Votre publication a été restaurée",
+    "restore-expired": "La publication a été prolongée de 7 jours supplémentaires",
+    "unsaved": "Publication retirée des favoris",
+    "saved": "Publication ajoutée aux favoris",
+    "contact-open-failed": "Impossible d’ouvrir {method}",
+    "contact-use-failed": "Échec de l’utilisation de {method}",
+    "link-copied": "Lien copié dans le presse-papiers",
+    "copy-failed": "Échec de la copie du lien",
+    "copy-link-instead": "Échec du partage, copiez plutôt le lien",
+    "copy-link": "Copier le lien",
+    "no-native": "Partage natif non pris en charge. Lien copié dans le presse-papiers à la place.",
+    "file-max": "Maximum de {max} fichiers autorisés.",
+    "file-invalid": "Fichier invalide. Formats autorisés",
+    "file-large": "Le fichier dépasse 2 Mo.",
+    "file-max1": "Seulement {max} fichiers autorisés. Supprimez certains fichiers pour en ajouter de nouveaux.",
+    "unblock": "@{username} a été débloqué(e).",
+    "block": "@{username} a été bloqué(e).",
+    "load-profile-fail": "Impossible de charger le profil utilisateur pour {email}",
+    "saves-cleared": "Vos enregistrées ont été effacées",
+    "saves-restored": "Vos enregistrées ont été restaurées"
+  },
+  "Dropdown": {},
+  "NotFound": {
+    "title": "Désolé, cette page n’est pas disponible",
+    "desc": "Le lien que vous avez suivi est peut-être cassé,<br></br>ou la page a été supprimée",
+    "return": "Retour"
+  },
+  "Attachments": {
+    "File": {
+      "vid-tag": "Votre navigateur ne prend pas en charge la balise vidéo."
+    },
+    "Alt": {
+      "title": "Modifier la description de l’image (ALT)",
+      "aria-label": "Ajouter une légende pour les lecteurs d’écran",
+      "placeholder": "Ajouter une légende"
+    },
+    "AltModal": {
+      "title": "Description de l’image (ALT)"
+    },
+    "esc-to-ex": "Appuyez sur Échap pour quitter"
+  },
+  "ComposeModal": {
+    "Compose": {
+      "title": "Nouvelle publication",
+      "placeholder": "Que souhaitez-vous faire accomplir ?",
+      "default-placeholder": "Commencez à écrire..."
+    },
+    "Details": {
+      "title": "Ajouter des détails",
+      "comp": {
+        "fixed": "Fixé",
+        "hourly": "Horaire",
+        "daily": "Journalier",
+        "fixed-placeholder": "Rémunération totale (min XAF {amount})",
+        "hourly-placeholder": "Taux horaire (min XAF {amount}/heure)",
+        "daily-placeholder": "Taux journalier (min XAF {amount}/jour)",
+        "label": "Rémunération",
+        "desc": "Informez les autres de ce que vous proposez pour cette tâche. Choisissez un type et un montant.",
+        "placeholder": "Laissez une note sur les conditions de paiement (optionnel)",
+        "title": "Détails supplémentaires (optionnel)"
+      },
+      "contact": {
+        "whatsapp": "Votre numéro WhatsApp",
+        "email": "Votre adresse e-mail",
+        "phone": "Votre numéro de téléphone pour appels ou SMS",
+        "label": "Comment vous contacter *",
+        "desc": "Sélectionnez les moyens par lesquels vous souhaitez être contacté. Vous pouvez ajouter plusieurs méthodes comme WhatsApp, téléphone ou e-mail.",
+        "add-contact": "Ajouter un contact",
+        "section-title": "Moyens de contact",
+        "notice": "⚠️ Attention ! Vous ajoutez des coordonnées à votre publication — comme votre téléphone, WhatsApp ou e-mail. N’oubliez pas que cela sera visible par tous. Ne partagez que ce que vous êtes prêt à rendre public ! (Nous travaillons sur un moyen plus sécurisé de se connecter, bientôt disponible.)"
+      },
+      "hood": {
+        "label": "Quartier (optionnel)",
+        "desc": "Précisez la zone ou la ville exacte pour une meilleure visibilité. Utile pour les tâches locales. Votre publication apparaîtra également par défaut sous {sub}{parent}.",
+        "placeholder": "Rechercher des quartiers à {location}",
+        "default-placeholder": "Rechercher des quartiers...",
+        "fetch-failed": "Échec du chargement des quartiers",
+        "title-alt": "Quartiers de {parent}"
+      },
+      "categ": {
+        "label": "Catégories",
+        "desc": "Choisissez le type principal de tâche que vous publiez. Cela permet aux autres de la trouver rapidement.",
+        "sub-label": "Sous-catégories (optionnel)",
+        "sub-desc": "Ajoutez plus de détails en sélectionnant une ou plusieurs sous-catégories liées à votre tâche."
+      }
+    },
+    "Drafts": {
+      "empty": "Vous n’avez pas encore enregistré de brouillons.",
+      "delete": "Supprimer le brouillon"
+    },
+    "SaveToDrafts": {
+      "title": "Enregistrer dans les brouillons ?",
+      "sub": "Enregistrez dans les brouillons pour modifier et publier plus tard.",
+      "save": "Enregistrer dans les brouillons",
+      "discard": "Ignorer les modifications"
+    }
+  },
+  "BlockModal": {
+    "title": "Bloquer @{username}",
+    "sub": "Bloquer @{username} retirera ses publications de votre fil et l’empêchera d’interagir avec vous. Il/elle ne pourra pas voir votre profil ni vos publications.",
+    "continue": "Voulez-vous vraiment continuer ?",
+    "u-title": "Débloquer @{username}",
+    "u-sub": "Débloquer @{username} lui permettra à nouveau de voir vos publications et votre profil, et vous commencerez à voir son contenu si vous ne l’avez pas masqué. Continuer ?"
+  },
+  "ComingSoonModal": {
+    "title": "Bientôt disponible...",
+    "sub": "Oups ! Vous venez de tomber sur quelque chose de nouveau et brillant...",
+    "msg": "<span>Nous travaillons dur pour donner vie à cette fonctionnalité ! Elle n’est pas encore prête, mais elle vaudra le coup d’attendre. Restez à l’écoute. 💫</span><span>Vous avez des idées ou des retours ? Nous serions ravis de vous entendre !</span>",
+    "feedback": "Laisser un avis",
+    "close": "Compris"
+  },
+  "DeletePostModal": {
+    "title": "Supprimer la publication",
+    "sub": "Cette publication sera supprimée définitivement. Vous ne pourrez pas la restaurer.<br></br>Pour la garder restaurable, vous pouvez l’archiver à la place."
+  },
+  "ClearSavesModal": {
+    "title": "Effacer vos Enregistrements",
+    "sub": "Tous vos éléments enregistrés seront effacés. Vous ne pourrez plus les restaurer si vous effectuez cette action."
+  },
+  "FeedbackModal": {
+    "feature": "🚀 Demande de fonctionnalité",
+    "bug": "🐛 Bug ou problème",
+    "improvement": "💡 Suggestion d'amélioration",
+    "general": "🧭 Retour général",
+    "design": "🎨 Design / Ergonomie",
+    "mobile": "📱 Expérience mobile",
+    "confusing": "🧼 Quelque chose était confus",
+    "question": "❓ J'ai une question",
+    "title": "Dites-nous ce que vous en pensez !",
+    "section-title": "Sélectionnez un sujet (optionnel)",
+    "section-title1": "Message",
+    "placeholder": "Comment pouvons-nous nous améliorer ?",
+    "placeholder1": "Adresse e-mail",
+    "input-title": "Vous pouvez laisser votre e-mail afin que nous puissions vous recontacter (optionnel)."
+  },
+  "SettingsModal": {
+    "Profile": {
+      "title": "Profil",
+      "pic-btn": "Changer la photo de profil",
+      "pic-title": "Photo de profil",
+      "pic-label": "Téléverser une image",
+      "pic-note": "<span>Recommandé : 400x400px</span><span>Taille max : 2 Mo</span>",
+      "pic-revert": " Annuler le changement",
+      "pic-reset": " Réinitialiser l'image par défaut",
+      "display-name": "Nom d'affichage",
+      "display-placeholder": "Comment votre nom apparaît sur votre profil",
+      "bio": "Courte bio (optionnel)",
+      "bio-placeholder": "C’est la toute première chose que les autres liront sur vous après votre nom",
+      "gender": "Genre (optionnel)",
+      "male": "Homme",
+      "female": "Femme",
+      "error-length": "Le nom d'utilisateur doit comporter au moins 4 caractères",
+      "error-validating": "Erreur lors de la validation du nom d'utilisateur"
+    },
+    "Account": {
+      "title": "Compte",
+      "display-prefs-title": "Préférences d'affichage",
+      "language": "Langue",
+      "lang-drop-title": " Langue d'affichage",
+      "auto": "Détection automatique"
+    }
+  },
+  "SignInModal": {
+    "Providers": {
+      "title": "Connectez-vous pour continuer",
+      "sub": " En continuant, vous acceptez nos <span>conditions d'utilisation</span> et notre <span>politique de confidentialité</span>",
+      "continue-with": "Continuer avec",
+      "google-fail": "La connexion Google a échoué"
+    },
+    "Email": {
+      "title": "Continuer avec un e-mail",
+      "sub": "Entrez votre e-mail et nous vous enverrons un lien pour vous connecter à votre compte.",
+      "label": "Nouvelle adresse e-mail"
+    },
+    "MagicLink": {
+      "title": "Vérifiez votre boîte de réception",
+      "sub": "Nous avons envoyé un lien de connexion à<email>{address}</email>Ouvrez le lien dans ce navigateur pour finaliser votre connexion. Si vous ne voyez pas l'e-mail :",
+      "steps": "<li>Vérifiez votre dossier spam ou courrier indésirable.</li><li>Assurez-vous d'avoir entré la bonne adresse e-mail.</li>",
+      "note": "Le lien de connexion expirera dans 10 minutes, utilisez-le rapidement !"
+    },
+    "BasicProfile": {
+      "error-length": "Le nom d’utilisateur doit comporter au moins 4 caractères",
+      "error-validating": "Erreur lors de la validation du nom d’utilisateur",
+      "error-displyname": "Le nom d’affichage est requis",
+      "invalid-or-taken": "Le nom d’utilisateur n’est pas valide ou est déjà pris",
+      "enter-username": "Veuillez entrer un nom d’utilisateur valide",
+      "create-fail": "Échec de la création du profil",
+      "title": "Bienvenue sur Tasks",
+      "desc": "Nous avons juste besoin de quelques informations pour terminer la création de votre compte. Vous pourrez toujours les modifier plus tard.",
+      "display-name": "Votre nom d’affichage",
+      "display-placeholder": "Comment votre nom apparaît sur votre profil",
+      "change-email": " Utiliser une autre adresse e-mail"
+    }
+  },
+  "Providers": {
+    "AuthProvider": {
+      "load-fail": "Impossible de charger le profil",
+      "load-fail-var": "Impossible de charger le profil pour {email}"
+    }
+  },
+  "ServerSide": {
+    "generic-error-msg": "Oups ! Une erreur est survenue. Veuillez réessayer plus tard.",
+    "generic-network-error": "Veuillez vérifier votre connexion réseau et réessayer.",
+    "empty-username": "Le nom d'utilisateur ne peut pas être vide",
+    "short-username": "Nom d'utilisateur trop court",
+    "taken-username": "Nom d'utilisateur déjà pris",
+    "available-username": "Nom d'utilisateur disponible",
+    "profile-create-success": "Profil créé avec succès",
+    "no-user-id": "Aucun ID ou nom d'utilisateur fourni",
+    "profile-loaded": "Profil chargé avec succès",
+    "draft-saved": "Votre brouillon a été enregistré.",
+    "attach-delete-error": "Impossible de supprimer une pièce jointe. Veuillez réessayer.",
+    "draft-deleted": "Brouillon supprimé.",
+    "drafts-cleared": "Tous les brouillons ont été effacés.",
+    "post-published": "Votre publication a été publiée.",
+    "post-unsaved": "Publication retirée des Enregistrements",
+    "post-saved": "Publication ajoutée aux Enregistrements",
+    "restore-restored": "Votre publication a été restaurée",
+    "restore-expired": "La publication a été prolongée de 7 jours supplémentaires",
+    "post-deleted": "La publication a été supprimée.",
+    "feedback-no-msg": "Aucun message",
+    "feedback-thanks": "Merci pour votre retour — nous l'apprécions vraiment ! 💛",
+    "magic-link-fail": "Échec de l'envoi du lien de connexion. Veuillez réessayer plus tard.",
+    "invalid-email": "L'adresse e-mail \"{email}\" est invalide.",
+    "magic-link-sent": "E-mail soumis avec succès. Lien de connexion envoyé",
+    "no-email": "Veuillez fournir une adresse e-mail valide",
+    "sign-out-success": "Déconnexion réussie",
+    "attachment-upload-fail": "Impossible de téléverser une pièce jointe. Veuillez réessayer.",
+    "email-share-subject": "Suite à votre publication sur {name}",
+    "link-meta-fetch-fail": "Impossible de récupérer les métadonnées"
+  }
+}

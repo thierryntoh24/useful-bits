@@ -1,0 +1,8 @@
+{
+  "name": "utils",
+  "type": "react-component",
+  "files": ["index.ts", "types.ts"],
+  "dependencies": [],
+  "target": "utils",
+  "description": "Commonly used utility functions"
+}

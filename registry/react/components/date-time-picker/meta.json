@@ -1,0 +1,8 @@
+{
+  "name": "date-time-picker",
+  "type": "react-component",
+  "files": ["index.tsx", "types.ts"],
+  "dependencies": ["react", "lucide-react", "date-fns"],
+  "target": "components/ui",
+  "description": "A reusable native-ish date and time picker component that combines a calendar popover with an optional time input. Extending shadcn/ui."
+}

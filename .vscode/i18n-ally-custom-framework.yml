@@ -1,0 +1,16 @@
+languageIds:
+  - javascript
+  - typescript
+  - javascriptreact
+  - typescriptreact
+
+usageMatchRegex:
+  # custom matchers for translation functions
+  - "[^\\w\\d]t\\(['\"`]({key})['\"`]"
+  - "[^\\w\\d]g\\(['\"`]({key})['\"`]"
+  - "[^\\w\\d]m\\(['\"`]({key})['\"`]"
+
+scopeRangeRegex: "useTranslation\\(\\s*\\[?\\s*['\"`](.*?)['\"`]"
+
+# Optional: allow both your custom and built-in matchers
+monopoly: false

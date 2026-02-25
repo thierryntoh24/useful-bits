@@ -1,0 +1,8 @@
+{
+  "name": "placeholder-plugin",
+  "type": "prosemirror-plugin",
+  "files": ["index.tsx"],
+  "dependencies": ["prosemirror-state", "prosemirror-view"],
+  "target": "hooks",
+  "description": "Simple placeholder plugin for ProseMirror."
+}

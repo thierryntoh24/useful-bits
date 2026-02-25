@@ -1,0 +1,8 @@
+{
+  "name": "date-range-picker",
+  "type": "react-component",
+  "files": ["index.tsx", "types.ts"],
+  "dependencies": ["react", "date-fns", "lucide-react", "react-day-picker"],
+  "target": "components/ui",
+  "description": "A reusable date range picker that allows users to select a start and end date. Extending shadcn/ui."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "dropdown",
+  "type": "react-component",
+  "files": ["index.tsx"],
+  "dependencies": ["react", "next"],
+  "target": "providers",
+  "description": "Provider to manage browsing history stack"
+}

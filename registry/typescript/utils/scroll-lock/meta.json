@@ -1,0 +1,8 @@
+{
+  "name": "scroll-lock",
+  "type": "utility",
+  "files": ["index.ts, lock.ts"],
+  "dependencies": [],
+  "target": "hooks",
+  "description": "Utility to lock/unlock scrolling on elements"
+}

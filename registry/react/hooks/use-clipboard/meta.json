@@ -1,0 +1,8 @@
+{
+  "name": "use-clipboard",
+  "type": "react-hook",
+  "files": ["index.tsx", "types.ts"],
+  "dependencies": ["react"],
+  "target": "hooks",
+  "description": "Custom hook for handling clipboard operations."
+}
