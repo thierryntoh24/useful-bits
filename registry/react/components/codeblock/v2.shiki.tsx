@@ -1,43 +1,12 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Spinner } from "@/components/ui/spinner";
-import { useClipboard } from "@/registry/react/hooks/use-clipboard";
-import { useState, useRef, useEffect } from "react";
-import {
-  BundledLanguage,
-  codeToHtml,
-  codeToTokens,
-  SpecialLanguage,
-  type ThemedToken,
-} from "shiki";
-
-/**
- * Props for the Shiki-powered {@link CodeBlock} component.
- */
-export interface CodeBlockProps {
-  /** The raw code string to display and highlight. */
-  code: string;
-  /**
-   * A Shiki-supported language identifier used for syntax highlighting.
-   * Full list: https://shiki.style/languages
-   * @defaultValue `"tsx"`
-   */
-  language?: BundledLanguage | SpecialLanguage;
-  /** Optional filename shown in the header bar above the code. */
-  filename?: string;
-  /**
-   * A Shiki built-in theme name.
-   * Full list: https://shiki.style/themes
-   * @defaultValue `"github-dark"`
-   */
-  theme?: string;
-  /**
-   * Whether to render line numbers in a gutter alongside each line.
-   * @defaultValue `false`
-   */
-  showLineNumbers?: boolean;
-}
+import { cn } from "@/lib/utils";
+import { CodeCollapsibleWrapper } from "@/registry/react/components/codeblock/code-collapsible-wrapper";
+import { CopyButton } from "@/registry/react/components/codeblock/copy-button";
+import { getIconForLanguageExtension } from "@/registry/react/components/codeblock/icons";
+import { CodeBlockProps } from "@/registry/react/components/codeblock/types";
+import { useState, useEffect } from "react";
+import { codeToHtml, codeToTokens, type ThemedToken } from "shiki";
 
 /**
  * A syntax-highlighted code display component powered by
@@ -77,29 +46,19 @@ export function CodeBlock({
   filename,
   theme = "github-dark",
   showLineNumbers = false,
+  collapsible = false,
 }: CodeBlockProps) {
-  const [copied, setCopied] = useState(false);
-
   /**
    * Highlighted HTML string produced by `codeToHtml` (used when
    * `showLineNumbers` is false). `null` while Shiki is still loading.
    */
-  const [highlightedHtml, setHighlightedHtml] = useState<string | null>(null);
+  const [highlightedHtml, setHighlightedHtml] = useState<string>();
 
   /**
    * Per-line token arrays produced by `codeToTokens` (used when
    * `showLineNumbers` is true). `null` while Shiki is still loading.
    */
-  const [tokenLines, setTokenLines] = useState<ThemedToken[][] | null>(null);
-
-  const codeRef = useRef<HTMLDivElement>(null);
-
-  const clipboard = useClipboard({ resetDelay: 3000 });
-
-  const handleCopy = () => {
-    if (clipboard.isCopying) return;
-    clipboard.copy(code);
-  };
+  const [tokenLines, setTokenLines] = useState<ThemedToken[][]>();
 
   useEffect(() => {
     let cancelled = false;
@@ -119,34 +78,65 @@ export function CodeBlock({
     };
   }, [code, language, theme, showLineNumbers]);
 
+  if (!collapsible) {
+    return (
+      <div className={cn("relative")}>
+        <ComponentCode
+          {...{
+            code,
+            language,
+            filename,
+            showLineNumbers,
+            highlightedHtml,
+            tokenLines,
+          }}
+        />
+      </div>
+    );
+  }
+
   return (
-    <div className="relative rounded-lg border border-zinc-800 bg-zinc-950 font-mono text-sm">
+    <CodeCollapsibleWrapper>
+      <ComponentCode
+        {...{
+          code,
+          language,
+          filename,
+          showLineNumbers,
+          highlightedHtml,
+          tokenLines,
+        }}
+      />
+    </CodeCollapsibleWrapper>
+  );
+}
+
+function ComponentCode({
+  code,
+  language = "tsx",
+  filename,
+  showLineNumbers,
+  highlightedHtml,
+  tokenLines,
+}: Omit<CodeBlockProps, "collapsible"> & {
+  highlightedHtml?: string;
+  tokenLines?: ThemedToken[][];
+}) {
+  return (
+    <div className="relative rounded-lg border bg-zinc-950 font-mono text-sm">
       {filename && (
-        <div className="flex items-center border-b border-zinc-800 px-4 py-2">
-          <span className="text-xs text-zinc-400">{filename}</span>
+        <div className="flex items-center gap-2 border-b border-border/30 px-4 py-2.5">
+          {getIconForLanguageExtension(language)}
+
+          <span className="text-muted-foreground">{filename}</span>
         </div>
       )}
 
-      <Button
-        onClick={handleCopy}
-        variant={"ghost"}
-        size={"icon-sm"}
-        aria-label={clipboard.isCopied ? "Copied!" : "Copy code"}
-        className="absolute right-1 top-1 z-10"
-      >
-        {clipboard.isCopied ? (
-          <CheckIcon className="size-3.5" />
-        ) : clipboard.isCopying ? (
-          <Spinner className="size-3.5" />
-        ) : (
-          <CopyIcon className="size-3.5" />
-        )}
-      </Button>
-
-      <div ref={codeRef} className="overflow-x-auto">
+      <div className="overflow-x-auto no-scrollbar max-h-75 tablet:max-h-112.5">
+        <CopyButton value={code} />
         {showLineNumbers ? (
           // Line-number mode: render tokens manually so we control the layout.
-          <pre className="p-4 leading-relaxed bg-transparent!">
+          <pre className="p-4 leading-relaxed bg-transparent! ">
             <table className="w-full border-collapse">
               <tbody>
                 {(tokenLines ?? code.split("\n").map(() => [])).map(
@@ -211,6 +201,7 @@ function escapeHtml(str: string): string {
     .replace(/"/g, "&quot;");
 }
 
+// Optional
 function CopyIcon({ className }: { className?: string }) {
   return (
     <svg

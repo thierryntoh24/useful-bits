@@ -1,29 +1,10 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Spinner } from "@/components/ui/spinner";
-import { useClipboard } from "@/registry/react/hooks/use-clipboard";
-import { useState, useRef } from "react";
-
-/**
- * Props for the {@link CodeBlock} component.
- */
-export interface CodeBlockProps {
-  /** The raw code string to display. */
-  code: string;
-  /**
-   * The language identifier used for display purposes only (no syntax highlighting).
-   * @defaultValue `"tsx"`
-   */
-  language?: string;
-  /** Optional filename shown in the header bar above the code. */
-  filename?: string;
-  /**
-   * Whether to render line numbers alongside each line of code.
-   * @defaultValue `false`
-   */
-  showLineNumbers?: boolean;
-}
+import { cn } from "@/lib/utils";
+import { CodeCollapsibleWrapper } from "@/registry/react/components/codeblock/code-collapsible-wrapper";
+import { CopyButton } from "@/registry/react/components/codeblock/copy-button";
+import { getIconForLanguageExtension } from "@/registry/react/components/codeblock/icons";
+import { CodeBlockProps } from "@/registry/react/components/codeblock/types";
 
 /**
  * A lightweight, dependency-free code display component with a one-click copy
@@ -51,62 +32,63 @@ export function CodeBlock({
   language = "tsx",
   filename,
   showLineNumbers = false,
+  collapsible = false,
 }: CodeBlockProps) {
-  const codeRef = useRef<HTMLPreElement>(null);
-  const clipboard = useClipboard({ resetDelay: 3000 });
-
   const lines = code.split("\n");
 
-  const handleCopy = () => {
-    if (clipboard.isCopying) return;
-    clipboard.copy(code);
-  };
-
-  // const handleCopy = async () => {
-  //   try {
-  //     await navigator.clipboard.writeText(code);
-  //     setCopied(true);
-  //     setTimeout(() => setCopied(false), 2000);
-  //   } catch {
-  //     const selection = window.getSelection();
-  //     const range = document.createRange();
-  //     if (codeRef.current) {
-  //       range.selectNodeContents(codeRef.current);
-  //       selection?.removeAllRanges();
-  //       selection?.addRange(range);
-  //       document.execCommand("copy");
-  //       selection?.removeAllRanges();
-  //       setCopied(true);
-  //       setTimeout(() => setCopied(false), 2000);
-  //     }
-  //   }
-  // };
+  if (!collapsible) {
+    return (
+      <div className={cn("relative")}>
+        <ComponentCode
+          {...{
+            code,
+            language,
+            filename,
+            showLineNumbers,
+            lines,
+          }}
+        />
+      </div>
+    );
+  }
 
   return (
-    <div className="relative rounded-lg border border-zinc-800 bg-zinc-950 font-mono text-sm">
+    <CodeCollapsibleWrapper>
+      <ComponentCode
+        {...{
+          code,
+          language,
+          filename,
+          showLineNumbers,
+          lines,
+        }}
+      />
+    </CodeCollapsibleWrapper>
+  );
+}
+
+function ComponentCode({
+  code,
+  language = "tsx",
+  filename,
+  showLineNumbers,
+  lines,
+}: Omit<CodeBlockProps, "collapsible"> & {
+  lines: string[];
+}) {
+  return (
+    <div className="relative rounded-lg border bg-zinc-950 font-mono text-sm">
       {filename && (
-        <div className="flex items-center border-b border-zinc-800 px-4 py-2">
-          <span className="text-xs text-zinc-400">{filename}</span>
+        <div className="flex items-center gap-2 border-b border-border/30 px-4 py-2.5">
+          {getIconForLanguageExtension(language)}
+
+          <span className="text-muted-foreground">{filename}</span>
         </div>
       )}
 
-      <Button
-        onClick={handleCopy}
-        variant={"ghost"}
-        size={"icon-sm"}
-        aria-label={clipboard.isCopied ? "Copied!" : "Copy code"}
-        className="absolute right-1 top-1 z-10"
-      >
-        {clipboard.isCopied ? (
-          <CheckIcon className="size-3.5" />
-        ) : clipboard.isCopying ? (
-          <Spinner className="size-3.5" />
-        ) : (
-          <CopyIcon className="size-3.5" />
-        )}
-      </Button>
+      <CopyButton value={code} />
 
-      <pre ref={codeRef} className="overflow-x-auto p-4 leading-relaxed">
+      <pre className="p-4 overflow-x-auto no-scrollbar max-h-75 tablet:max-h-112.5">
         {showLineNumbers ? (
           <table className="w-full border-collapse">
             <tbody>
