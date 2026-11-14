@@ -16,3 +16,33 @@ const nextConfig: NextConfig = {
 /** Export intl config */
 export default withNextIntl(nextConfig);
 ```
+
+## usage
+* use the provider in `root layout`
+```tsx
+import {NextIntlClientProvider} from 'next-intl';
+ 
+type Props = {
+  children: React.ReactNode;
+};
+ 
+export default async function RootLayout({children}: Props) {
+  return (
+    <html>
+      <body>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      </body>
+    </html>
+  );
+}
+```
+
+* consume with `useTranslations` hook in your component
+```tsx
+import {useTranslations} from 'next-intl';
+ 
+export default function HomePage() {
+  const t = useTranslations('HomePage');
+  return <h1>{t('title')}</h1>;
+}
+```
